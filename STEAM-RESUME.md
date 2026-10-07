@@ -45,9 +45,9 @@ El proyecto es un **MVP sólido / beta privada**, **no listo para publicar en St
 ## Checklist post–Fase 1
 
 ### Verificar build (manual / CI)
-- [ ] `npm run build:win`
-- [ ] No reaparecen `bundled-games` en dist
-- [ ] `licenses/` viaja en el instalador
+- [x] Empaquetado `dist/win-unpacked` OK (2026-10-07); NSIS `.exe` falló con `spawn UNKNOWN` (entorno) — reintentar después
+- [x] No hay `bundled-games` en win-unpacked
+- [x] `licenses/` presentes en `win-unpacked/resources/licenses` (NOTICE con URL del repo)
 - [ ] Probar Raptor (carpeta): SETUP → guardar → PLAY
 - [ ] Reportar problema → abre Issues
 
