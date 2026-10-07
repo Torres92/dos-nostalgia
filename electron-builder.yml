@@ -46,9 +46,8 @@ appImage:
   artifactName: ${name}-${version}.${ext}
 npmRebuild: false
 # Direct (non-Steam) updates via electron-updater + GitHub Releases.
-# Replace owner/repo when the public repo exists; until then checks return "unavailable".
 publish:
   provider: github
-  owner: YOUR_GITHUB_USER
+  owner: Torres92
   repo: dos-nostalgia
   releaseType: release

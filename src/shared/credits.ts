@@ -7,7 +7,9 @@ export const ALLOWED_EXTERNAL_URLS = [
   'https://dosbox-x.com',
   'https://github.com/joncampbell123/dosbox-x',
   'https://www.gnu.org/licenses/old-licenses/gpl-2.0.html',
-  'https://www.electronjs.org'
+  'https://www.electronjs.org',
+  'https://github.com/Torres92/dos-nostalgia',
+  'https://github.com/Torres92/dos-nostalgia/issues'
 ] as const
 
 export type AllowedExternalUrl = (typeof ALLOWED_EXTERNAL_URLS)[number]

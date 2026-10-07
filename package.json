@@ -6,7 +6,14 @@
   "license": "GPL-2.0",
   "main": "./out/main/index.js",
   "author": "DOS Nostalgia",
-  "homepage": "https://github.com",
+  "homepage": "https://github.com/Torres92/dos-nostalgia",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Torres92/dos-nostalgia.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Torres92/dos-nostalgia/issues"
+  },
   "scripts": {
     "copy:jsdos": "node scripts/copy-jsdos.mjs",
     "format": "prettier --write .",

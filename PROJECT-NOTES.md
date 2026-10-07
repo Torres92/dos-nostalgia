@@ -3,7 +3,7 @@
 Documento vivo de **decisiones de negocio**, **deuda técnica** y **detalles fáciles de olvidar**.  
 Handoff operativo Steam: ver también [`STEAM-RESUME.md`](STEAM-RESUME.md).
 
-Última actualización: 2026-09-19.
+Última actualización: 2026-10-07.
 
 ---
 
@@ -13,9 +13,8 @@ Handoff operativo Steam: ver también [`STEAM-RESUME.md`](STEAM-RESUME.md).
 |-----|--------|--------|
 | Modal **Reportar problema** (`DosSupportDialog`) | **Hecho** | Error legible + comentario opcional + **Enviar** |
 | Dónde aparece | **Hecho** | Launch error, ErrorBoundary (crash UI), Ajustes |
-| Qué hace Enviar hoy | **Temporal** | Copia diagnóstico al portapapeles + abre GitHub Issues **si** `package.json` → `homepage` es un repo real |
-| Sin repo aún | **Actual** | Solo clipboard; mensaje lo explica |
-| Backend de tickets / email | **Pendiente** | Sustituir o complementar Issues cuando exista |
+| Qué hace Enviar hoy | **Hecho (GitHub)** | Copia diagnóstico + abre Issues en [Torres92/dos-nostalgia](https://github.com/Torres92/dos-nostalgia/issues) |
+| Backend de tickets / email | **Pendiente** | Sustituir o complementar Issues si hace falta |
 | Mailto dedicado | **Pendiente** | Alternativa si no queremos depender de GitHub login |
 | Pegar diagnóstico en el issue | **Manual** | URL no puede llevar el JSON completo; el usuario pega Ctrl+V |
 
@@ -71,7 +70,8 @@ Archivos: `DosSupportDialog.tsx`, `diagnostics.submitSupportReport`, IPC `diagno
 |-----|--------|--------|
 | Canal `steam` \| `direct` | **Scaffold** | Detecta Steam / override env |
 | Banner + check en Ajustes/About | **Hecho** | |
-| Feed GitHub Releases | **Pendiente** | Requiere `homepage` + `publish` reales en electron-builder |
+| `homepage` + `publish` GitHub | **Hecho** | `Torres92/dos-nostalgia` |
+| Primera Release en GitHub | **Pendiente** | Crear release para que el feed de updates tenga algo que servir |
 | Steam self-update | **No** | Steam gestiona updates |
 | Code signing Windows | **Pendiente** | SmartScreen sin cert |
 
@@ -83,8 +83,8 @@ Archivos: `DosSupportDialog.tsx`, `diagnostics.submitSupportReport`, IPC `diagno
 |-----|--------|--------|
 | BYOG + gate legal | **Hecho** | |
 | GPLv2 + carpeta licenses | **Hecho** | |
-| Repo público GitHub | **Pendiente** | Bloquea homepage, Issues, updates feed |
-| `homepage` placeholder | **Actual** | `https://github.com` — reemplazar |
+| Repo público GitHub | **Hecho** | https://github.com/Torres92/dos-nostalgia |
+| NOTICE / PRIVACY con URL fuente | **Hecho** | 2026-10-07 |
 | Mini-juegos bundled | **Eliminados** | No reintroducir en dist |
 | Steam store copy BYOG | **Pendiente** | Fase 3 |
 
@@ -115,5 +115,5 @@ Archivos: `DosSupportDialog.tsx`, `diagnostics.submitSupportReport`, IPC `diagno
 ## Cómo retomar
 
 1. Leer este archivo + `STEAM-RESUME.md`.
-2. Si ya hay repo: actualizar `homepage`, NOTICE, publish, y probar **Enviar** del modal de soporte (debe abrir Issues).
-3. Prompt útil: *“Seguí desde PROJECT-NOTES.md y STEAM-RESUME.md”*.
+2. Fase 2: tests smoke, CI, signing; opcional primera GitHub Release.
+3. Prompt útil: *“Seguí desde PROJECT-NOTES.md y STEAM-RESUME.md — Fase 1 cerrada; arrancá Fase 2”*.

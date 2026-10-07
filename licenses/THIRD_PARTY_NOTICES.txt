@@ -55,8 +55,11 @@ How to obtain corresponding source
 The GPLv2 requires that recipients can obtain the corresponding source for
 GPL-covered components you redistribute.
 
-- DOS Nostalgia launcher source: the application source package / repository
-  that matches this version (see package.json version field).
+- DOS Nostalgia launcher source: https://github.com/Torres92/dos-nostalgia
+  Use the git tag / GitHub Release that matches this build's version
+  (see package.json / About screen). Example: v1.0.0 →
+  https://github.com/Torres92/dos-nostalgia/releases/tag/v1.0.0
+  (or the matching commit on main until a tag exists).
 - js-dos / emulators sources are publicly available at the repositories above,
   at the versions pinned in this app's package.json / package-lock.json.
 - The verbatim GPLv2 license text ships with every build of this application
@@ -64,3 +67,5 @@ GPL-covered components you redistribute.
 
 Open the licenses folder from: Acerca de → Abrir carpeta de licencias
 (or from the installed app's resources/licenses directory).
+
+Support: https://github.com/Torres92/dos-nostalgia/issues

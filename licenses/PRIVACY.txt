@@ -1,7 +1,7 @@
 DOS Nostalgia — Privacy
 =======================
 
-Last updated: 2026-09-19
+Last updated: 2026-10-07
 
 Summary
 -------
@@ -28,9 +28,13 @@ absolute paths to your game folders. Review them before posting publicly.
 
 Contact / support URL
 ---------------------
-Before a public Steam launch, set package.json "homepage" (and the Steam
-support URL) to a real contact channel. A public GitHub repository Issues page
-is enough at first; a dedicated website is optional and not required.
+Public repository and support (GitHub Issues):
+
+  https://github.com/Torres92/dos-nostalgia
+  https://github.com/Torres92/dos-nostalgia/issues
+
+A dedicated website is optional. For Steam store pages, use the same Issues
+URL (or Steam discussions) as the support contact.
 
 Changes
 -------
