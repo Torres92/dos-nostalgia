@@ -1,0 +1,54 @@
+appId: com.dosnostalgia.launcher
+productName: DOS Nostalgia
+directories:
+  buildResources: build
+files:
+  - '!**/.vscode/*'
+  - '!src/*'
+  - '!electron.vite.config.{js,ts,mjs,cjs}'
+  - '!{.eslintcache,eslint.config.mjs,.prettierignore,.prettierrc.yaml,README.md}'
+  - '!{.env,.env.*,.npmrc,pnpm-lock.yaml}'
+  - '!{tsconfig.json,tsconfig.node.json,tsconfig.web.json}'
+  - '!node_modules/js-dos/**'
+  - '!node_modules/emulators/**'
+extraResources:
+  - from: licenses
+    to: licenses
+  - from: resources/logo
+    to: logo
+asarUnpack:
+  - resources/**
+win:
+  executableName: DOS Nostalgia
+  icon: build/icon.ico
+nsis:
+  artifactName: ${name}-${version}-setup.${ext}
+  shortcutName: ${productName}
+  uninstallDisplayName: ${productName}
+  createDesktopShortcut: always
+  license: licenses/GPL-2.0.txt
+  installerIcon: build/icon.ico
+  uninstallerIcon: build/icon.ico
+mac:
+  entitlementsInherit: build/entitlements.mac.plist
+  notarize: false
+  icon: build/icon.icns
+dmg:
+  artifactName: ${name}-${version}.${ext}
+linux:
+  target:
+    - AppImage
+    - deb
+  maintainer: dos-nostalgia
+  category: Game
+  icon: build/icon.png
+appImage:
+  artifactName: ${name}-${version}.${ext}
+npmRebuild: false
+# Direct (non-Steam) updates via electron-updater + GitHub Releases.
+# Replace owner/repo when the public repo exists; until then checks return "unavailable".
+publish:
+  provider: github
+  owner: YOUR_GITHUB_USER
+  repo: dos-nostalgia
+  releaseType: release

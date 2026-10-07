@@ -1,0 +1,16 @@
+NOTICE
+
+DOS Nostalgia is licensed under the GNU General Public License version 2 (GPL-2.0).
+A full copy of the GPL-2.0 text is included as GPL-2.0.txt in this folder and as
+LICENSE in the project root.
+
+DOS Nostalgia also includes / redistributes emulation technology from:
+
+  • js-dos          — https://js-dos.com  (GPL-2.0)
+  • emulators       — https://github.com/js-dos/emulators  (GPL-2.0)
+  • DOSBox / DOSBox-X (via the above WASM backends)  (GPL-2.0)
+
+See THIRD_PARTY_NOTICES.txt, PRIVACY.txt, and TERMS.txt in this folder.
+
+This product does not ship copyrighted game files. Use only software you
+have the right to run.

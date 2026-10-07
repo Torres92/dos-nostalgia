@@ -1,0 +1,66 @@
+DOS Nostalgia — third-party notices
+===================================
+
+DOS Nostalgia (the launcher application) is licensed under the GNU General
+Public License version 2 (GPL-2.0). The complete corresponding source for this
+application is the project source tree distributed with or alongside this
+build (see the project repository / source package). A full copy of the GPLv2
+text is included as GPL-2.0.txt in this folder.
+
+This application embeds DOS emulation via js-dos and the emulators WebAssembly
+packages. Those components are based on DOSBox / DOSBox-X and are licensed under
+GPLv2 as well.
+
+IMPORTANT
+---------
+This launcher does NOT include copyrighted game ROMs or game archives.
+Users must point the app only at games they have the legal right to use
+(freeware, public domain, or lawfully obtained copies).
+
+Credits and source code
+-----------------------
+
+js-dos (GPL-2.0)
+  Author: Alexander Guryanov (caiiiycuk)
+  Website: https://js-dos.com
+  Issues / project: https://github.com/caiiiycuk/js-dos
+
+emulators (GPL-2.0) — DOSBox / DOSBox-X WASM backends used by js-dos
+  Repository: https://github.com/js-dos/emulators
+  Website: https://js-dos.com
+
+DOSBox
+  Website: https://www.dosbox.com
+  The original DOSBox project is licensed under GPLv2.
+
+DOSBox-X
+  Repository: https://github.com/joncampbell123/dosbox-x
+  Website: https://dosbox-x.com
+  This application runs games with the DOSBox-X backend exposed by js-dos
+  (backend: dosboxX), which is important for EGA titles.
+
+node-unrar-js (MIT) — RAR archive extraction for user libraries
+  Repository: https://github.com/YuJianrong/node-unrar.js
+  This package wraps UnRAR source derived from RARLAB.
+  UnRAR copyright (c) Alexander L. Roshal. See RARLAB terms for redistribution
+  of the UnRAR sources/binaries: https://www.rarlab.com
+
+Electron, Chromium, Node.js, React, and other redistributed components
+  Follow their respective licenses. Electron builds typically include Chromium
+  license notices with the runtime. Development dependency trees are listed in
+  package.json / package-lock.json of the corresponding source package.
+
+How to obtain corresponding source
+----------------------------------
+The GPLv2 requires that recipients can obtain the corresponding source for
+GPL-covered components you redistribute.
+
+- DOS Nostalgia launcher source: the application source package / repository
+  that matches this version (see package.json version field).
+- js-dos / emulators sources are publicly available at the repositories above,
+  at the versions pinned in this app's package.json / package-lock.json.
+- The verbatim GPLv2 license text ships with every build of this application
+  (licenses/GPL-2.0.txt, also installed next to the app as extraResources).
+
+Open the licenses folder from: Acerca de → Abrir carpeta de licencias
+(or from the installed app's resources/licenses directory).

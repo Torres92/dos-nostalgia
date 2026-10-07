@@ -1,0 +1,38 @@
+DOS Nostalgia — Privacy
+=======================
+
+Last updated: 2026-09-19
+
+Summary
+-------
+DOS Nostalgia stores data only on your computer. It does not include analytics,
+crash upload, advertising, or account login.
+
+What we store locally
+---------------------
+- Settings (game folder path, covers folder path, legal acceptance timestamp)
+- Application logs under the OS user-data directory
+- Optional diagnostic reports you generate (JSON), which may include folder
+  paths and recent error messages
+
+What we do NOT collect
+----------------------
+- No telemetry is sent to our servers (there is no online backend in this build)
+- Game files stay on your disk; the app mounts temporary in-memory bundles to
+  run them and does not upload them
+
+Diagnostics
+-----------
+If you use "Copy report" or share logs for support, those files can contain
+absolute paths to your game folders. Review them before posting publicly.
+
+Contact / support URL
+---------------------
+Before a public Steam launch, set package.json "homepage" (and the Steam
+support URL) to a real contact channel. A public GitHub repository Issues page
+is enough at first; a dedicated website is optional and not required.
+
+Changes
+-------
+If a future version adds network features or telemetry, this notice will be
+updated and (where required) you will be asked to consent again.

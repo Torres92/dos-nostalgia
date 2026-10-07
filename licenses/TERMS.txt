@@ -1,0 +1,32 @@
+DOS Nostalgia — Terms of use
+============================
+
+Last updated: 2026-09-19
+
+1. The software
+---------------
+DOS Nostalgia is a desktop launcher and DOS emulator front-end. The software
+itself is licensed under the GNU General Public License version 2 (GPL-2.0).
+See GPL-2.0.txt and NOTICE.txt in this folder.
+
+2. No games included
+--------------------
+This product does NOT include copyrighted game ROMs, disk images, or commercial
+DOS titles. You must supply your own game files from a local folder (BYOG).
+
+3. Your responsibility (BYOG)
+-----------------------------
+You agree to use DOS Nostalgia only with software you have the legal right to
+use (for example freeware, public domain works, or lawfully obtained copies).
+You are solely responsible for the content of the folders you configure.
+
+4. No warranty
+--------------
+To the extent permitted by applicable law, the software is provided "AS IS"
+without warranty of any kind. Emulation compatibility varies by title.
+
+5. Acceptance
+-------------
+By accepting these terms in the application (first-run acknowledgment), you
+confirm that you understand sections 2–4 above and the GPL notices shipped
+with the product.
